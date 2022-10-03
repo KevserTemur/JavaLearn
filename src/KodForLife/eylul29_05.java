@@ -13,9 +13,6 @@ public class eylul29_05 {
         char i=harfDepo.charAt(harfDepo.indexOf("i"));
 
 
-
-
-
-        System.out.println("A L i");
+        System.out.println(""+A+""+L+""+i);
     }
 }

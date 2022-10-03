@@ -20,8 +20,5 @@ public class eylul29_08 {
         System.out.println("Ad-Soyad :"+yeniAd+" "+yeniSoyad+ " kart no : "+yeniKartNo);
 
 
-
-
-
     }
 }

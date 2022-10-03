@@ -17,16 +17,15 @@ public class eylul29_03 {
         Scanner scan = new Scanner(System.in);
         System.out.println("üç harfli bir kelime giriniz :");
         String kelime = scan.nextLine();
-
-
-
-
+        char harf1= kelime.charAt(0);
+        char harf2= kelime.charAt(1);
+        char harf3= kelime.charAt(2);
+        if (kelime.length()>3) {
+            System.out.println("girdiginiz kelime 3 harfli degil");
+        } else if (harf1!=harf2 && harf1!=harf3 && harf2!=harf3) {
             System.out.println("girdiginiz kelime 3 harfli ve unique karaktere sahip");
-
+        } else
             System.out.println("girdiginiz kelime 3 harfli ve unique karaktere sahip degil");
-
-
+    }
         }
 
-
-    }

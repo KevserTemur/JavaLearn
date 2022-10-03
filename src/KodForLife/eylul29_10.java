@@ -18,20 +18,15 @@ public class eylul29_10 {
         String cumle = scan.next();
         System.out.println("bir kelime girin :");
         String kelime = scan.next();
-
-
-        System.out.println(cumle.contains(kelime));
-
-
-        System.out.println("Girilen kelime cumlede kullanilmamis.");
-
-        System.out.println(" Girilen kelime cumlede 1 kere kullanilmis.");
-
-        System.out.println("Girilen kelime cumlede 1’den fazla kullanilmis.");
-
-
-
-
-
-    }
-}
+        int defa = 0;
+/*
+        for (int i = 0; i < cümle.lenght(-1); i++) {
+            if (cumle.contains(kelime)) {
+                System.out.println(" Girilen kelime cumlede 1 kere kullanilmis.");
+            else if ()
+                    System.out.println("Girilen kelime cumlede 1’den fazla kullanilmis.");
+                else
+                    System.out.println("Girilen kelime cumlede kullanilmamis.");
+                    */
+            }
+        }

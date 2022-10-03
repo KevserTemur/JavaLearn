@@ -22,8 +22,5 @@ public class eylul29_09 {
         double toplam = (sayi1 + sayi2) / 100;
         System.out.println("$" + toplam);
 
-
-
-
     }
 }
