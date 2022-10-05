@@ -1,4 +1,4 @@
-package j12_lopps;
+package j12_lopps.L01_ForLoop;
 
 import java.util.Scanner;
 
