@@ -1,4 +1,4 @@
-package j12_lopps;
+package j12_lopps.Tasks;
 
 import java.util.Scanner;
 
