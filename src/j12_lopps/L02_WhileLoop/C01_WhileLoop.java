@@ -13,28 +13,28 @@ public class C01_WhileLoop {
         // 11 den 20 ye kadar olan tam sayıları print eden code creat ediniz.
 
         System.out.print("    **** for ****   ");
-        for (int i=11; i<21; i++) {
-            System.out.println(i+" ");
+        for (int i = 11; i < 21; i++) {
+            System.out.println(i + " ");
         }
         System.out.print("   ***** while ****    ");
-        int basla=11;
-        while (basla<21){ //basla 21 den küçük oldugu sürece(iken) body action uygula
-            System.out.println(basla+" ");
+        int basla = 11;
+        while (basla < 21) { //basla 21 den küçük oldugu sürece(iken) body action uygula
+            System.out.println(basla + " ");
             basla++;
         }
 
         // 7 kere javaCAN print eden code creat ediniz
-        int b=1;
-        while (b<8){
+        int b = 1;
+        while (b < 8) {
             System.out.println("javaCAN");
             b++; // bunu yazmazsan sonsuza kadar çalışır.
 
         }
 // 2 basamaklı tek sayıları yan yana print eden code creat ediniz.
-        b=11;
-        while (b<100){
-            System.out.println(b+" ");
-            b+=2;
+        b = 11;
+        while (b < 100) {
+            System.out.println(b + " ");
+            b += 2;
           /*
             if (b%2==1) System.out.println(b+ " ");
             b++;
@@ -43,16 +43,35 @@ public class C01_WhileLoop {
 // girilen metni while loop ile tersten print eden code create ediniz
         System.out.println("***task04***");
         Scanner scan = new Scanner(System.in);
-        String metin= scan.nextLine();
-        int metinUzunluk= metin.length();
+        String metin = scan.nextLine();
+        int metinUzunluk = metin.length();
 
-        while (metinUzunluk>=1) {
-            System.out.print(metin.charAt(metinUzunluk-1));
+        while (metinUzunluk >= 1) {
+            System.out.print(metin.charAt(metinUzunluk - 1));
             metinUzunluk--;
 
         }
 
 
+        // girilen tamsayıya kadar tamsayıların toplamını print eden code create ediniz.
+        System.out.println("bir tamsayı gir");
+        int sayi = scan.nextInt();
+        int toplam = 0; // döngü aksiyonundan oluşacak toplam için boş int oluşturuldu
+        while (sayi > 0) { // sayı bir olana dek
+            toplam += sayi; // her döngüde sayıyı toplama ekle
+            sayi--; // her döngüde sayıyı bir azalt ki dönüp durmasın
+            System.out.println("sayılar toplamı: " + toplam);
+        }
 
-    } // main dışı
+
+        // girilen tamsayının faktoriyelini print eden code create ediniz.
+        int faktoriyel = 1;
+        while (sayi > 0) { // sayı bir olana dek
+            faktoriyel *= sayi; // her döngüde sayıyı toplama ekle
+            sayi--; // her döngüde sayıyı bir azalt ki dönüp durmasın
+            System.out.println("sayının faktoriyeli: " + toplam);
+
+
+        } // main dışı
+    }
 }
