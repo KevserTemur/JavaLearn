@@ -1,5 +1,7 @@
 package j12_lopps.L02_WhileLoop;
 
+import java.util.Scanner;
+
 public class C01_WhileLoop {
     public static void main(String[] args) {
 
@@ -26,6 +28,27 @@ public class C01_WhileLoop {
         while (b<8){
             System.out.println("javaCAN");
             b++; // bunu yazmazsan sonsuza kadar çalışır.
+
+        }
+// 2 basamaklı tek sayıları yan yana print eden code creat ediniz.
+        b=11;
+        while (b<100){
+            System.out.println(b+" ");
+            b+=2;
+          /*
+            if (b%2==1) System.out.println(b+ " ");
+            b++;
+            */
+        }
+// girilen metni while loop ile tersten print eden code create ediniz
+        System.out.println("***task04***");
+        Scanner scan = new Scanner(System.in);
+        String metin= scan.nextLine();
+        int metinUzunluk= metin.length();
+
+        while (metinUzunluk>=1) {
+            System.out.print(metin.charAt(metinUzunluk-1));
+            metinUzunluk--;
 
         }
 

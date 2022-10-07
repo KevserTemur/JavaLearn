@@ -1,4 +1,4 @@
-package j12_lopps.Tasks;
+package j12_lopps.L01_ForLoop.Tasks;
 
 public class Task13_nestedForLoop {
     public class Task13_Nested {
