@@ -2,7 +2,7 @@ package java_practice.ForLoop;
 
 import java.util.Scanner;
 
-public class ForLoop05 {
+public class ForLoop_05 {
     /*
    Get the number of rows and columns from user.
    Create a rectangle.
