@@ -11,5 +11,13 @@ public class ForLoop_03 {
      */
 
 
+        String s="java";
+        for (int i= 0; i< s.length(); i++) {
+            System.out.print(s.charAt(i) + "*");
+        }
+        int num=100;
+        for (int i =num; i>=0; i=i-2){  // i-= ifadesi i=i-2 ye denktir.
+            System.out.print(i+" ");
+        }
     }
 }
