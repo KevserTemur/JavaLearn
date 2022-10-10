@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.ForLoop;
 
 public class ForLoop_03 {
     public static void main(String[] args) {
