@@ -34,7 +34,7 @@ public class C01_instanceVariable {
         int a=7;
         System.out.println(a);
         // System.out.println(yas); inst değer ataması yapmadan işleme alınmaz non-static olduğu için doğrudan çağrılamaz.
-        System.out.println(kurs); // static variable doğrudan static methoda çağrıldı
+        //System.out.println(kurs); // static variable doğrudan static methoda çağrıldı
 
 
 
