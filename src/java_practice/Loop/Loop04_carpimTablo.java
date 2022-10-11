@@ -1,6 +1,6 @@
 package java_practice.Loop;
 
-public class Loop04 {
+public class Loop04_carpimTablo {
     // 1 x 1 = 1
     // 1 x 2 = 2
     // 1 x 3 = 3

@@ -1,6 +1,6 @@
 package java_practice.Loop;
 
-public class Loop03 {
+public class Loop03_basmakRakamTop {
     // girilen sayının basamaklarındaki rakamların toplamını bulunuz.
 
     // girilen sayının basamaklarındaki rakamların toplamını bulunuz.
