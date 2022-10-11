@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.String;
 
 public class Q10_StringManipulation {
     // String seklinde verlen asagidaki fiyatlarin toplamini bulunuz

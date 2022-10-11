@@ -1,4 +1,4 @@
-package java_practice;
+package java_practice.String;
 
 public class Q13_StringManipulation {
     // soru: "   Java ogrenmek123 Cok guzel@      " Stringini "Java ogrenmek cok guzel" seklinde yazdirin.
