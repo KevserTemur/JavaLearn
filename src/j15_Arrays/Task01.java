@@ -10,7 +10,6 @@ public class Task01 {
         Scanner scan = new Scanner(System.in);
         System.out.print("array uzunluğunu gir");
         int arrBoyut = scan.nextInt();
-
         int arr[] = new int[arrBoyut];//boyutu belirlenmiş boş int array
         for (int i = 0; i < arrBoyut; i++) {
             System.out.print(i + ". index  elemanı giriniz : ");
@@ -25,7 +24,10 @@ public class Task01 {
             System.out.print(arr[i] + " ");
         }
 
-
+    /*
+        int arrBoyut = scan.nextInt();
+        int arr[] = new int[arrBoyut];//boyutu belirlenmiş boş int array
+    */
 
 
 
