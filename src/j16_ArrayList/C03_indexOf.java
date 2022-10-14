@@ -12,9 +12,10 @@ public class C03_indexOf {
         System.out.println(listSehir.indexOf("ankara"));
         System.out.println(listSehir.indexOf("manisa")); // list de olmayan eleman indeksi -1 return eder
          // case sensitive
-
-
-
+        listUlke.add("Amerigonya");
+        System.out.println("listUlke = " + listUlke);//[Alamanya, Amerigonya, ingiltere, isvec, Amerigonya]
+        System.out.println(listUlke.indexOf("Amerigonya"));//1-> tekrarlı elemanlarda soldan(baştan) ilk bulunan eleman index'i return eder
+        System.out.println(listUlke.lastIndexOf("Amerigonya"));//4->sağdan(sondan) ilk bulunan elemanın index'i return eder
 
 
 
