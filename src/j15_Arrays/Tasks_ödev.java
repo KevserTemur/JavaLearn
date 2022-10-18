@@ -78,6 +78,7 @@ public class Tasks_ödev {
         System.out.println("ilk array: "+ Arrays.toString(array1));
         for (int i = array.length-1; i < 0; i--) {
             System.out.println(array1[i] +" ");
+            System.out.println("**************");
 
         }
 
@@ -86,9 +87,15 @@ public class Tasks_ödev {
         //        input : 1,2,-3,4,-5,-6
         //        output :-1,-2,3,-4,5,6
 
-
-
-
+    int arr1 []= {1,2,-3,4,-5,-6};
+        sayınınTersi(arr);
 
     }
+
+    private static void sayınınTersi(int[] arr) {
+        for (int a:arr) {
+            a*=-1;
+            System.out.println(a+ " ");
+        }
     }
+}
