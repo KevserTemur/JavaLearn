@@ -1,4 +1,4 @@
-package KodForLife;
+package CodeForLife;
 
 public class yeniiiii {
 

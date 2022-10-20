@@ -1,4 +1,4 @@
-package KodForLife;
+package CodeForLife;
 
 import java.util.Scanner;
 

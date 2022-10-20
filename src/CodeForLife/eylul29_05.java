@@ -1,4 +1,4 @@
-package KodForLife;
+package CodeForLife;
 
 public class eylul29_05 {
     public static void main(String[] args) {

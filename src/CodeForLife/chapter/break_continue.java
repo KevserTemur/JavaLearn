@@ -1,4 +1,4 @@
-package KodForLife.chapter;
+package CodeForLife.chapter;
 
 public class break_continue {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package KodForLife;
-
-import j10_StringManipulation.C06_Substring;
+package CodeForLife;
 
 import java.util.Scanner;
 public class eylul29_02 {
