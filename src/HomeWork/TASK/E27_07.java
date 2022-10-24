@@ -1,4 +1,4 @@
-package TASK;
+package HomeWork.TASK;
 
 public class E27_07 {
 /*  TASK :
