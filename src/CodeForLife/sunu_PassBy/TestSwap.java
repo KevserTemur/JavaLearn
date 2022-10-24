@@ -17,7 +17,7 @@ public class TestSwap {
         System.out.println(p2);
     }
 
-    private static void swap(Person p1Param, Person p2Param) {
+    public static void swap(Person p1Param, Person p2Param) {
 
         Person temp = p1Param;
         p1Param = p2Param;
