@@ -1,4 +1,4 @@
-package javapractice.random;
+package java_practice.random;
 
 import java.util.Random;
 
