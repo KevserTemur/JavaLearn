@@ -13,5 +13,6 @@ public class Runner {
         System.out.println("Toplam Odenecek Ucret: " + ((employee.salary) + (employee.raiseSalary())));
 
         System.out.println(employee.toString());
+        System.out.println("test deneme");
     }
 }
