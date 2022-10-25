@@ -8,8 +8,8 @@ public class Employee {
     int workHours;
     int year;
 
-    public Employee(String name, int salary, int workHours, int year) {
-        this.name = name;
+    public Employee(String isim, int salary, int workHours, int year) {
+        this.name = isim;
         this.salary = salary;
         this.workHours = workHours;
         this.year = year;
@@ -27,6 +27,7 @@ public class Employee {
 
         return  paymentOfTax;
     }
+
 
     public int bonus(){
 
@@ -57,4 +58,14 @@ public class Employee {
         return raising;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", workHours=" + workHours +
+                ", year=" + year +
+                ", Company= Clarusway" +
+                '}';
+    }
 }
