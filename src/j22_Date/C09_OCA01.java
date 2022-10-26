@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class C09_OCA01 {
     public static void main(String[] args) {
 
-        String date = LocalDate.parse("2014-05-04").format(DateTimeFormatter.ISO_DATE_TIME);
+        String date = LocalDate.parse("2014-05-04").format(DateTimeFormatter.ISO_DATE_TIME); // time silersen kod çalışır
         System.out.println(date);
         //what is the result ?
 
@@ -17,7 +17,7 @@ public class C09_OCA01 {
          *
          * C) 5/4/14T00:00:00:000
          *
-         * D) An exception is throw at runtime
+         * D) An exception is throw at runtime  ++++++
          */
 
 
