@@ -7,7 +7,7 @@ public class C07_ComparingDateTime {
         LocalDate bugun=LocalDate.now();
         LocalDate falanGun=bugun.minusDays(24);
         LocalDate fesmekanGun=bugun.plusDays(3);
-        LocalDate fathBirthDay=LocalDate.of(1993,5,19);
+        LocalDate kvsrBirthDay=LocalDate.of(1987,8,19);
 
         System.out.println("bugun = " + bugun);//bugun = 2022-10-26
         System.out.println("falanGun = " + falanGun);//falanGun = 2022-10-24
@@ -28,7 +28,7 @@ public class C07_ComparingDateTime {
         int fark1=falanGun.compareTo(fesmekanGun);
         System.out.println("fark1 = " + fark1);
 
-        System.out.println("bugun.compareTo(fathBirthDay) = " + bugun.compareTo(fathBirthDay));//29
+        System.out.println("bugun.compareTo(fathBirthDay) = " + bugun.compareTo(kvsrBirthDay));//29
 // 2022.10.26 ->1993.5.19
 /*     ComperaTo komutu işlevi:
         2020-05-23 >  2018-04-02   compareTo =>  2  en büyük fark yılda olduğu için
