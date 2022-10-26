@@ -14,7 +14,7 @@ Asagidaki code'un  ciktisi  nedir?
         LocalDate date = LocalDate.of(2018, Month.APRIL, 29);
         System.out.println(date.getYear() + " " + date.getMonth() + " " + date.getDayOfMonth());
 /*
-            A. 2018 APRIL 29
+            A. 2018 APRIL 29 ++++
             B. 2018 APRIL 30
             C. 2018 MAY 10
             D. Another date.
