@@ -10,4 +10,6 @@ Müsteri isminde class olusturalim. Bu class icerisinde aliveris isminde bir met
 Bu methodda kullanicidan gelen ekmek sayisini alip, tutari hesaplasin.
 Runner class'ta ise kullanicidan ekmek sayisi alsin ve alisveris method'unu cagirsin.
      */
+
+
 }
