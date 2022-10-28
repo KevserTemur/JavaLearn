@@ -1,4 +1,4 @@
-package j23_Varargs_StringBuilder.Varargs;
+package j23_Varargs_StringBuilder.varargs;
 
 import java.util.Random;
 
