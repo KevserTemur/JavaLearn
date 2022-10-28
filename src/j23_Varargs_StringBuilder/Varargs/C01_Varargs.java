@@ -1,4 +1,4 @@
-package j23_Varargs_StringBuilder;
+package j23_Varargs_StringBuilder.Varargs;
 
 public class C01_Varargs {
     public static void main(String[] args) {
