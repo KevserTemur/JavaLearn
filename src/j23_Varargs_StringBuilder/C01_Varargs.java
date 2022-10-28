@@ -54,4 +54,15 @@ public class C01_Varargs {
         }
         System.out.println("sayıların toplamı : "+(toplam));
     }
+    public  static void enUzuuunKelime(String... str){//varargs method
+        String enUzun="";
+
+        for (String w:str){
+            if (w.length()>enUzun.length()){
+                enUzun=w;
+            }
+        }
+        System.out.println("en uzun kelime :"+enUzun);
+
+    }
 }
