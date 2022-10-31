@@ -41,6 +41,11 @@ Bir cümleyi parametre olarak kabul eden, StringBuilder kullanarak cümleyi ters
         }
         return new StringBuilder(str).reverse().toString().equals(str);
 
+
+
+
+
     }
+
 
 }
