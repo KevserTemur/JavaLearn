@@ -57,6 +57,30 @@ public class C02_StringBuilder {
         System.out.println("sb1 = " + sb1);//jAVselam olsun 24 true basarı gayrete asıktır :)
 
 
+        // istenen karakter veya karekterleri eklemek
+        System.out.println("sb3 = " + sb3);
+        System.out.println("sb3.insert(4, :)) = " + sb3.insert(4, ":)"));
+        String s= "güzel insan";
+
+//  System.out.println("sb3.insert(9,s) = " + sb3.insert(9, s));
+        System.out.println("sb3.insert(1,s,3,7) = " + sb3.insert(1, s, 3, 7));//eel ibub:)ekir bey->sb3 value!sini 1. index'ine s value'sinin 3,7 index eklendi
+
+        StringBuilder sb4=new StringBuilder("Nihan Hanım");
+        System.out.println("sb4.insert(5,\"Qa team lead\",0,2) = " + sb4.insert(5, "Qa team lead", 0, 2));//NihanQa Hanım
+
+        //istenen index'deki karakteri değiştirme..
+        sb4.setCharAt(6,'A');
+        sb4.setCharAt(sb4.indexOf(" "),':');
+        System.out.println("sb4 = " + sb4);//NihanQA Hanım
+        System.out.println("sb4.insert(6,\" \") = " + sb4.insert(5, " "));
+
+        //istenen index'e karakter yerine birden cok karakter eklemek
+
+        System.out.println("sb4.replace(8,10,\"hi\") = " + sb4.replace(8, 10, "hi"));
+
+        //Sb obj String'e çevirme-> toString()
+
+        System.out.println("sb3.toString().toUpperCase() = " + sb3.toString().toUpperCase());//EEL İBUB:)EKİR BEY->sb3 SB stringe cevirelerek toUppercase meth calıştı
 
 
 
