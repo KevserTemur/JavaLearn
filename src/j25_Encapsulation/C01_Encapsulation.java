@@ -40,5 +40,20 @@ public class C01_Encapsulation {
  */
 
 
+        public static void main(String[] args) {
+            C02_Encapsulation obj1 = new C02_Encapsulation("dilek hanım", 11);
+            C02_Encapsulation obj2 = new C02_Encapsulation();
+            System.out.println("obj1.idVer() = " + obj1.getId());//11
+            System.out.println("obj1.isimVer() = " + obj1.getName());//dilek hanım
+            obj1.setName("Dilek team lead");//dilek hanım ismi Dilek team lead olarak update set edildi
+            System.out.println("obj1.isimVer() = " + obj1.getName());//Dilek team lead
 
-}
+            System.out.println("obj2.idVer() = " + obj2.getId());//1001
+            System.out.println("obj2.isimVer() = " + obj2.getName());//Gamze hanım
+            obj2.setName("gamze scrum master");
+            System.out.println("obj2.isimVer() = " + obj2.getName());//gamze scrum master
+            System.out.println("obj2 = " + obj2);
+        }
+
+    }
+
