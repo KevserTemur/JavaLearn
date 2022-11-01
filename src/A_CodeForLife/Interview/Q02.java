@@ -22,8 +22,8 @@ Ex : removeDup("AAABBBCCC") ==> ABC
         String result = ""; // boş string açtık
 
         // for (int i = 0; i < str.length(); i++) {
-        //     if (!result.contains(str.substring(i,i+1)));
-        //     result += str.substring(i, i+1);
+        //     if (!result.contains(str.charAt(i)));
+        //     result += str.charAt(i);
         // }
 
 
