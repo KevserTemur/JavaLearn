@@ -1,5 +1,8 @@
 package A_CodeForLife.Interview;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Q11 {
 //  11   -->>  Write a function that, given an integer N (1 < N < 100),
 //  returns an array containing N unique integers that sum up to 0,
@@ -13,6 +16,26 @@ public class Q11 {
 //          4
 //          -2 -1 1 2
 
+    public static void main(String[] args) {
+
+        int num =12;
+        int [] arr = unique(num);
+        System.out.println(Arrays.toString(arr));
 
 
+    }
+
+    public static int [] unique(int num) {
+
+    int [] arr = new int [num];
+
+    if (num%2 == 1) // tek sayı ise araya 0
+        arr[num/2] =0;
+
+        for (int i = 0; i < num/2; i++) { // çift ise 0 yok
+            arr[i] = -(i+1);
+            arr[num-1-i] = i+1;
+        }
+        return arr;
+    }
 }
