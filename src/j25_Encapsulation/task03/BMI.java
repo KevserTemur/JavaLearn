@@ -73,7 +73,7 @@ package j25_Encapsulation.task03;
     class Runner {//inner class
 
         public static void main(String[] args) {//main meth bası
-            BMI obj = new BMI("Muharrem bey", 46, 54, 1.63);
+            BMI obj = new BMI("kevser", 35, 65, 1.58);
             System.out.println("BMI :"+ obj.getName()+" "+obj.getStatus()+" "+obj.getBMI());
 
         }//main meth sonu
