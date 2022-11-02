@@ -15,7 +15,7 @@ public class Q09 {
         int [] arr = {10,9,8,7};
         System.out.println(Arrays.toString(sort(arr)));
         sortAscending(arr);
-
+        System.out.println(Arrays.toString(sort3(arr)));
 
     } // main sonu
 public static int [] sort(int[] arr){
@@ -54,7 +54,11 @@ public static int [] sort(int[] arr){
             min = Math.min(min, each);
         return min;
 
-
+        }
+        // Arrays sort method
+        public static int [] sort3(int[]arr) {
+        Arrays.sort(arr);
+        return arr;
         }
     }
 
