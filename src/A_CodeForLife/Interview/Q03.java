@@ -1,5 +1,8 @@
 package A_CodeForLife.Interview;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Q03 {
 
 
@@ -46,5 +49,12 @@ public class Q03 {
         return unique;
     }
     // Collections frequency method
-
+        public static String uniquecol(String str) {
+            String uni = "";
+            for (String w : str.split("")) {
+                uni += Collections.frequency(Arrays.asList(str.split("")), w) > 0 ? (uni.contains(w) ? "" :
+                        w + Collections.frequency(Arrays.asList(str.split("")), w)) : "";
+            }
+            return uni;
+        }
 }
