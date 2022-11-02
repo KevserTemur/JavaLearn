@@ -1,5 +1,6 @@
 package A_CodeForLife.Interview;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Q09 {
@@ -13,7 +14,7 @@ public class Q09 {
     public static void main(String[] args) {
         int [] arr = {10,9,8,7};
         System.out.println(Arrays.toString(sort(arr)));
-
+        sortAscending(arr);
 
 
     } // main sonu
@@ -25,15 +26,36 @@ public static int [] sort(int[] arr){
                 int temp = arr [j]; // temp yapcaz. yer değiştirdiğimiz için
                 arr [j] = arr [i];
                 arr [i] = temp;
-
             }
         }
 
     }
-
-
         return arr;
-}
+    }
+    // ArrayList method
+    public static int[] sortAscending(int[] arr){
 
-}
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (int each:arr)
+            list.add(each);
+
+        for (int i =0; i< arr.length; i++){
+            arr[i] = findMin(list);
+            list.remove(Integer.valueOf(arr[i]));
+            System.out.println(Arrays.toString(arr));
+        }
+        return arr;
+    }
+    // minimum value of a list
+    private static int findMin(ArrayList<Integer> a) {
+        int min =Integer.MAX_VALUE;
+        for (int each: a)
+            min = Math.min(min, each);
+        return min;
+
+
+        }
+    }
+
 
