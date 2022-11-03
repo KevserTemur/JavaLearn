@@ -1,5 +1,9 @@
 package j26_Inheritance;
 
+import j26_Inheritance.Inheritance01.Hayvancık;
+import j26_Inheritance.Inheritance01.Mammal;
+import j26_Inheritance.Inheritance01.Paluk;
+
 public class Runner {
     /*
  1)Java'da class'lar arasinda parent(Aile)-child(Cocuk)  relationship(iliski) tanımlanmıştır.
@@ -17,8 +21,28 @@ public class Runner {
 
     public static void main(String[] args) {
 
+        Hayvancık hyvn = new Hayvancık();
+        hyvn.hereket();
+        hyvn.içme();
+        hyvn.yeme();
+
+        System.out.println("*******");
 
 
+        Mammal m1 = new Mammal();
+        m1.sutBeslenme();
+        m1.dogum();
+        m1.yeme();
+        m1.hereket();
+        m1.içme();
+
+        System.out.println("*******");
+
+        Paluk hms =new Paluk();
+        hms.ızgaraTava();
+        hms.içme();
+        hms.hereket();
+        hms.yeme();
 
 
 
