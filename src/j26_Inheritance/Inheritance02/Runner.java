@@ -1,6 +1,7 @@
-package j26_Inheritance;
+package j26_Inheritance.Inheritance02;
 
-import j26_Inheritance.Inheritance01.*;
+import j26_Inheritance.Inheritance01.Koyun;
+import j26_Inheritance.Inheritance01.Paluk;
 
 public class Runner {
     /*
