@@ -1,8 +1,6 @@
 package j26_Inheritance;
 
-import j26_Inheritance.Inheritance01.Hayvancık;
-import j26_Inheritance.Inheritance01.Mammal;
-import j26_Inheritance.Inheritance01.Paluk;
+import j26_Inheritance.Inheritance01.*;
 
 public class Runner {
     /*
@@ -44,6 +42,25 @@ public class Runner {
         hms.hereket();
         hms.yeme();
 
+        System.out.println("****************");
+
+        Kedi kd=new Kedi();
+        kd.cırmala();
+        kd.dogum();
+        kd.içme();
+        kd.yeme();
+        kd.hereket();
+        kd.sutBeslenme();
+
+        System.out.println("********************");
+
+        Koyun ky=new Koyun();
+        ky.semir();
+        ky.hereket();
+        ky.içme();
+        ky.yeme();
+        ky.sutBeslenme();
+        ky.dogum();
 
 
     }
