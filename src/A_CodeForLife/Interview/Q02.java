@@ -14,6 +14,7 @@ Ex : removeDup("AAABBBCCC") ==> ABC
 
         String str = "AAABBBCCC";
         System.out.println(removeDup(str));
+        System.out.println(removeDup1(str));
 
 
     } // main dışı
@@ -35,7 +36,15 @@ Ex : removeDup("AAABBBCCC") ==> ABC
         }
 
         return result;
+    } // method sonu
 
+    public static String removeDup1(String str) {
+
+        String sade ="";
+        for (int i = 0; i < str.length(); i++) {
+            sade+= str.substring(i+1).contains(String.valueOf(str.charAt(i)))? "" : String.valueOf(str.charAt(i));
+        }
+        return sade;
     }
 }
 
