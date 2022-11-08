@@ -1,5 +1,7 @@
 package A_Projects.AutomationMac;
 
+import java.util.Scanner;
+
 public class Options {
 
 
@@ -20,8 +22,45 @@ public class Options {
 
 
     public double select(Urun urun){
+        System.out.println(urun.toString());
+        Scanner scanner =new Scanner(System.in);
 
+        do {
+            System.out.println("lütfen 1 ile 7 arasında bir rakam girerek almak istediğiniz ürünü seçiniz...");
+            System.out.println("çıkış için '0' ");
+            urun.setProductNum(scanner.nextInt());
+            if (urun.getProductNum()<0 || urun.getProductNum()>7) {
+                System.out.println("lütfen belirtilen aralıkta bir rakam giriniz...");
+            }
+        } while (urun.getProductNum()<0 || urun.getProductNum()>7);
 
-        return 1.5;
+        switch (urun.getProductNum()) {
+
+            case 0:
+                System.out.println("yine bekleriz...");
+                break;
+            case 1:
+                urun.setPrice(urun.getKraker());
+                break;
+            case 2:
+                urun.setPrice(urun.getCips());
+                break;
+            case 3:
+                urun.setPrice(urun.getCocaCola());
+                break;
+            case 4:
+                urun.setPrice(urun.getFanta());
+                break;
+            case 5:
+                urun.setPrice(urun.getSu());
+                break;
+            case 6:
+                urun.setPrice(urun.getCay());
+                break;
+            case 7:
+                urun.setPrice(urun.getFiltreKahve());
+                break;
+        }
+        return urun.getPrice();
     }
 }
