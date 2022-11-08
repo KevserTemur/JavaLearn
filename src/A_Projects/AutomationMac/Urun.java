@@ -108,6 +108,4 @@ price;
                 ",\nfiltreKahve=₺" + filtreKahve
                 ;
     }
-
-
 }

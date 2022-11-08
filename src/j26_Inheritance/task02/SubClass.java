@@ -2,8 +2,8 @@ package j26_Inheritance.task02;
 
 public class SubClass {
 
-    public class SubClass extends SuperClass{
-        public static void main(String[] args) {
+    public class subClass extends SuperClass{
+        public void main(String[] args) {
             SubClass obj=new SubClass();
             obj.my_method();
         }
@@ -22,5 +22,9 @@ public class SubClass {
 //  public void goster() {
 //     System.out.println("Bu method Sub classsın görüntülenme methodudur. ");
 //  }
+    }
+
+    private void my_method() {
+
     }
 }
