@@ -2,8 +2,8 @@ package j29_Exceptions.Q02._01;
 
 import java.util.Scanner;
 
-import static j28_Exception.Q02._01.Ogrenci.ogrenciList;
-import static j28_Exception.Q02._01.Okul.okulList;
+import static j29_Exceptions.Q02._01.Ogrenci.ogrenciList;
+import static j29_Exceptions.Q02._01.Okul.okulList;
 
 
 public class OkulMain {
@@ -32,7 +32,7 @@ public class OkulMain {
                     else break;
                 } catch (Exception e) {
                     System.out.println("Ogrenci yasi 8 ile 15 arasında olmalıdır. Tekrar giriniz.");
-                    break;//AHAN DA TRICK....bu komut olmazsa code sonsuz loop ...
+                    // break; bu komuta gerek yok
                 }
             }
             Ogrenci ogrenci = new Ogrenci(ogrenci1.getAd(), ogrenci1.getSoyad(), ogrenci1.getYas());
