@@ -13,7 +13,6 @@ public class Civic extends Honda {// Honda parent abs class extend child concret
 
    // public abstract void absMethod (); ya class abs olmalı ya da method concrete body olmalı
 
-    Civic cv = new Civic();
 
 
     @Override
@@ -34,4 +33,13 @@ public class Civic extends Honda {// Honda parent abs class extend child concret
     public int vites () { // concrete child class method
         return 5;
     }
+
+
+    public void lastikEbat() {
+        System.out.println("21 inc lastik ");
+
+    }
+    // Honda obj = new Civic();//honda oğlu civic
+    // Civic obj1 = new Civic();//civic oğlu civic
 }
+

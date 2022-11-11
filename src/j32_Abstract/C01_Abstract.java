@@ -25,7 +25,9 @@ public class C01_Abstract {
      5- Abs Class içinde hem abs method hemm de concrete meethod ve variable tanımlanabilir
 
      6- bir concrete child classs parent abs abs class extend ettiğinde abs method ları implement
-     ama concrete methotlar
+     ama concrete methotlar isteğe göre overrride edilir.
+
+     7-
 
      */
 

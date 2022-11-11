@@ -17,6 +17,14 @@ public abstract class Honda { // parent abstract class
     abstract void koltuk ();
     abstract void kapı();
 
+  // final void finalMethod (); // concrete method body siz olamaz
+  // final abstract void finalMethod (); // abs method final olamaz
 
+ //  private void privateMethod(); // concrete method body siz olamaz
+ //  private abstract void privateMethod(); abs method private olamaz
+
+  // static void gunesMethod ();// concrete method body siz olamaz
+  // static abstract void gunesMethod ();abs method private olamaz
+    //Honda obj=new Honda();//melekler doğurmaz abs class obj uretmez...
 
 }
