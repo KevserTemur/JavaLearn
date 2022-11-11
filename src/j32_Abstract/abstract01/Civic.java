@@ -13,6 +13,9 @@ public class Civic extends Honda {// Honda parent abs class extend child concret
 
    // public abstract void absMethod (); ya class abs olmalı ya da method concrete body olmalı
 
+    Civic cv = new Civic();
+
+
     @Override
     public void motor() {
         System.out.println("1,6 eco motor az yakar");
