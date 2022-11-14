@@ -21,4 +21,4 @@ package j32_Abstract.Ornek2;
         }
     }
 
-}
+
