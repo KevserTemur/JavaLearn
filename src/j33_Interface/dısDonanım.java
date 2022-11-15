@@ -1,6 +1,8 @@
 package j33_Interface;
 
 public interface dısDonanım {
+    void motor();
+
     public void kapi();//abs meth.
 
     abstract void kaporta();//abs meth.
