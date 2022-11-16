@@ -1,9 +1,6 @@
 package j34_Iterators;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class C01_Iterators {
 
@@ -75,6 +72,34 @@ public class C01_Iterators {
 
             }
             System.out.println("iterator  remove sonrası l2 : " + l2);// []
+
+            System.out.println("   *** ListIterators ***   ");
+
+            List<String> l3 = new ArrayList<>(Arrays.asList("Baran", "Gülsüm", "Akif", "Nazım"));
+            //l3 elamnalrını ıterator ile :-) set edip  print ediniz-> [Baran :-), Gülsüm :-), Akif :-), Nazım :-)]
+            System.out.println("iterator öncesi l3 : " + l3);//[Baran, Gülsüm, Akif, Nazım]
+            ListIterator<String> it3 = l3.listIterator();//tekrar iterator yapısı tanımlandı
+
+            while (it3.hasNext()) {
+
+                it3.set(it3.next() + " :-) ");//tekrardaki next() ile elemanı  :-) concat ederk update edilidi
+            }
+
+            System.out.println("iterator  set sonrası l3 : " + l3);// [Baran :-), Gülsüm :-), Akif :-), Nazım :-)
+
+            System.out.println("   *** ListIterators ***   ");
+            List<String> l4 = new ArrayList<>(Arrays.asList("Serhat ", "Yakup", "Mustafa", "Nazlı"));
+            System.out.println("ListIterator öncesi l3 : " + l3);//[Baran, Gülsüm, Akif, Nazım]
+            // l3 elamanlarının ilk harfi buyuk kln 3 hafi *** karakteri ve l4 listi ekleyip print ediniz
+            ListIterator<String> ebikGabık = l3.listIterator();//tekrar iterator yapısı tanımlandı
+
+            while (ebikGabık.hasNext()) {
+                ebikGabık.set(ebikGabık.next().toUpperCase().charAt(0) + "***");//next()ilen l4 elamanbı ilk harf byk kalan 3 harf*** le set edildi
+                ebikGabık.add(l4.toString());//tekrardaki updatebedilen l3 e l4 add edildi
+            }
+
+            System.out.println("Listiterator  set ve add sonrası l3 : " + l3);// [Baran :-), Gülsüm :-), Akif :-), Nazım :-)
+
 
         }
 
