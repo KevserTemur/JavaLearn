@@ -39,7 +39,7 @@ public class Islemler {
 		for(Ogrenci value : listOgrenci) {
 			if(value.tcNo.equals(kimlikNo)) {
 				sayac++;
-				System.out.println(value.toString());
+				System.out.println(value);
 			}
 		}
 		System.out.println(sayac==0 ? "Öğrenci bulunamadı" : "Öğrenci bilgileri yazdırıldı");
@@ -103,7 +103,7 @@ public class Islemler {
 		for(Ogretmen value : listOgretmen) {
 			if(value.tcNo.equals(kimlikNo)) {
 				sayac++;
-				System.out.println(value.toString());
+				System.out.println(value);
 			}
 		}
 		System.out.println(sayac==0 ? "Öğretmen bulunamadı" : "Öğretmen bilgileri yazdırıldı");
