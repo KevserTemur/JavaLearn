@@ -1,5 +1,9 @@
 package j99_Lambda;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class C01_LambdaExpression {
 
     public static void main(String[] args) {
@@ -43,9 +47,52 @@ public class C01_LambdaExpression {
 
 	 */
 
+        List<Integer> sayi = new ArrayList<>(Arrays.asList(24, 38, 49, 33, 7, 3, 42, 75, 45, 46, 55, 35, 25, 67, 16));
 
 
 
+    }// main sonu
 
+    // Task: "Structured Programming" Amele code kullanarak list elemanlarını aynı satirda aralarında bosluk olacak sekilde print ediniz.
+    public static void printElStructured (List<Integer> sayi){
+        for (Integer w : sayi ) {
+            System.out.println(w +" ");
+        }
+    }
+
+    // Task : "Structured Programming"  cıncık code kullanarak list elemanlarını aynı satirda aralarında bosluk olacak sekilde print ediniz.
+
+    public static void printElFunctional (List<Integer> sayi) {// Functional prog
+
+        sayi. // aksiyona girecek list call
+                stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
+                forEach((t) -> System.out.println(t+ " ")); // datanın parametresine göre akışdaki her bir elemanı işleme sokar.
+    }
+    /*
+    stream() : datalari yukaridan asagiya akis sekline getirir. Stream bir interface olduğundan dolayı doğrudan nesne almaz.
+    forEach() :datanin parametresine gore her bir elemanı isler
+    t-> : Lambda operatoru
+     Lambda Expression-->(parameter list) -> {action body}
+         Parameter list: Fonksiyonun parametreleri tanımlanır. Hiç parametre geçirmeden boşta olabilir.
+         -> Arrow-token: Argüman listesi(parameter list) ile expression gövdesini(action body) birbirine bağlamak için kullanılır.
+         Body: Expressionları ve statementları içerir.
+
+        Bir kod bloğundan oluşan bir body...
+        Bu tip lambda body, block body olarak bilinir. Blok gövdesi, lambda gövdesinin birden çok ifade içermesine izin verir.
+        Bu ifadeler parantez içine alınır ve parantezlerden sonra noktalı virgül eklemeniz gerekir.
+
+            () -> {
+             double pi = 3.1415;
+                return pi;
+            };
+   ahanda trick köşeşinde bugun :   Lambda Expression  yapisi cok tavsiye edilmez daha cok METHOD REFERENCE kullanilir
+
+    */
+    public static void printElFunctional1 (List<Integer> sayi) {// Functional prog
+
+        sayi. // aksiyona girecek list call
+                stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
+                forEach((System.out :: print)); // method referans -->  System.out yapısından print meth call edildi.
+                                                // MethodKaynağı :: Method ->
     }
 }
