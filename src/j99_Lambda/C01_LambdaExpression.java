@@ -49,7 +49,15 @@ public class C01_LambdaExpression {
 
         List<Integer> sayi = new ArrayList<>(Arrays.asList(24, 38, 49, 33, 7, 3, 42, 75, 45, 46, 55, 35, 25, 67, 16));
 
+        printElStructured(sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
+        System.out.println("\n   ***   ");
 
+        printElFunctional(sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
+        System.out.println("\n   ***   ");
+
+        printElFunctional1(sayi);//243849337342667545465535256716
+        System.out.println("\n   ***   ");
+        printElFunctional2( sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
 
     }// main sonu
 
@@ -93,6 +101,23 @@ public class C01_LambdaExpression {
         sayi. // aksiyona girecek list call
                 stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
                 forEach((System.out :: print)); // method referans -->  System.out yapısından print meth call edildi.
-                                                // MethodKaynağı :: Method ->
+                                                // MethodKaynağı :: Method -> meth reference
     }
+
+    public static void yazdir (int a){ // normal method ==> seed method (tohum method) ==> refere edilecek method
+        System.out.println(a+ " ");
+    }
+
+
+    public static void printElFunctional2 (List<Integer> sayi) {// Functional prog
+
+        sayi. // aksiyona girecek list call
+                stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
+                forEach((C01_LambdaExpression :: yazdir)); // method referans -->  System.out yapısından print meth call edildi.
+        // MethodKaynağı :: Method -> meth reference
+    }
+
+
+
+
 }
