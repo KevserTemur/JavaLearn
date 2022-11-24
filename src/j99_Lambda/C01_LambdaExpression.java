@@ -57,25 +57,26 @@ public class C01_LambdaExpression {
 
         printElFunctional1(sayi);//243849337342667545465535256716
         System.out.println("\n   ***   ");
-        printElFunctional2( sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
+        printElFunctional2(sayi);//24 38 49 33 7 3 42 66 75 45 46 55 35 25 67 16
 
     }// main sonu
 
     // Task: "Structured Programming" Amele code kullanarak list elemanlarını aynı satirda aralarında bosluk olacak sekilde print ediniz.
-    public static void printElStructured (List<Integer> sayi){
-        for (Integer w : sayi ) {
-            System.out.println(w +" ");
+    public static void printElStructured(List<Integer> sayi) {
+        for (Integer w : sayi) {
+            System.out.println(w + " ");
         }
     }
 
     // Task : "Structured Programming"  cıncık code kullanarak list elemanlarını aynı satirda aralarında bosluk olacak sekilde print ediniz.
 
-    public static void printElFunctional (List<Integer> sayi) {// Functional prog
+    public static void printElFunctional(List<Integer> sayi) {// Functional prog
 
         sayi. // aksiyona girecek list call
                 stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
-                forEach((t) -> System.out.println(t+ " ")); // datanın parametresine göre akışdaki her bir elemanı işleme sokar.
+                forEach((t) -> System.out.println(t + " ")); // datanın parametresine göre akışdaki her bir elemanı işleme sokar.
     }
+
     /*
     stream() : datalari yukaridan asagiya akis sekline getirir. Stream bir interface olduğundan dolayı doğrudan nesne almaz.
     forEach() :datanin parametresine gore her bir elemanı isler
@@ -96,28 +97,29 @@ public class C01_LambdaExpression {
    ahanda trick köşeşinde bugun :   Lambda Expression  yapisi cok tavsiye edilmez daha cok METHOD REFERENCE kullanilir
 
     */
-    public static void printElFunctional1 (List<Integer> sayi) {// Functional prog
+    public static void printElFunctional1(List<Integer> sayi) {// Functional prog
 
         sayi. // aksiyona girecek list call
                 stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
-                forEach((System.out :: print)); // method referans -->  System.out yapısından print meth call edildi.
-                                                // MethodKaynağı :: Method -> meth reference
+                forEach((System.out::print)); // method referans -->  System.out yapısından print meth call edildi.
+        // MethodKaynağı :: Method -> meth reference
     }
 
-    public static void yazdir (int a){ // normal method ==> seed method (tohum method) ==> refere edilecek method
-        System.out.println(a+ " ");
+    public static void yazdir(int a) { // normal method ==> seed method (tohum method) ==> refere edilecek method
+        System.out.println(a + " ");
     }
 
 
-    public static void printElFunctional2 (List<Integer> sayi) {// Functional prog
+    public static void printElFunctional2(List<Integer> sayi) {// Functional prog
 
         sayi. // aksiyona girecek list call
                 stream(). // List elemanlarını yukarıdan aşağıya akışa alır.
-                forEach((C01_LambdaExpression :: yazdir)); // method referans -->  System.out yapısından print meth call edildi.
+                forEach((C01_LambdaExpression::yazdir)); // method referans -->  System.out yapısından print meth call edildi.
         // MethodKaynağı :: Method -> meth reference
     }
 
 
-
+    public static void ciftMi(Integer integer) {
+    }
 
 }
