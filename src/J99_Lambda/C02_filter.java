@@ -1,4 +1,4 @@
-package j99_Lambda;
+package J99_Lambda;
 
 
 import java.util.ArrayList;

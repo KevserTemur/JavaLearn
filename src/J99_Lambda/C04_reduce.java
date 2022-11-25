@@ -1,4 +1,4 @@
-package j99_Lambda;
+package J99_Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +26,10 @@ public class C04_reduce {
         elTopla(sayi);
         System.out.println("\n   ***   ");
         ciftElCarpPrint(sayi);//2304
+        System.out.println("\n   ***   ");
+        minBul( sayi);//3
+        System.out.println("\n   ***   ");
+        ydrtBykEkTkPrint(sayi);//Optional[25]
     }//main sonu
 
     // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz.
@@ -77,11 +81,15 @@ public class C04_reduce {
         System.out.println(sayi.stream().reduce(Math::min));//1. yol-> meth refe.
         System.out.println(sayi.stream().reduce(Integer::min));//2. yol-> meth refe.
         System.out.println(sayi.stream().reduce(C04_reduce::byHalukMinBul));//3. yol-> meth refe.
-
-
+        System.out.println(sayi.stream().reduce(Integer.MAX_VALUE, (t, u) -> t < u ? t : u));//4. yol -> lamb. exp.
     }
-    public  static  int byHalukMinBul(int a,int b){//meth refe için seed(tohum) meth
-        return a<b?a:b;
+    public  static  int byHalukMinBul(int a,int b){//meth refe için seed(tohum) meth.
+        return a<b?a:b;//a buyukse a değilse b return et...
     }
+    // Task : List'teki 24'ten buyuk en kucuk tek sayiyi print ediniz.
 
+    public static void ydrtBykEkTkPrint(List<Integer> sayi){
+        System.out.println(sayi.stream().filter(t -> t > 24 && t % 2 == 1).reduce(Integer::min));
+        // System.out.println(sayi.stream().filter(t -> t > 24 && C01_LambdaExpression::ciftMi)-> CTE : exp. ve meth ref aynı parametrede olamaz
+    }
 }
