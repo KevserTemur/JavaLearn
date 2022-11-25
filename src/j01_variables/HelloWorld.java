@@ -36,21 +36,7 @@ public class HelloWorld {
         println-> yazdırma işleminden sonraki komutu ALT satırdan devam ettirir
         javada space yani boşluk bir character olarak tanımlanır
         h a l u k-> 9 karakter
+
          */
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
 }
