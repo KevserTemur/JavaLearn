@@ -20,6 +20,7 @@ public class C03_map {
     }//main sonu
 
         // Task : Functional Programming ile listin cift elemanlarinin  karelerini ayni satirda aralarina bosluk bırakarak print ediniz
+        // Task : Functional Programming ile listin cift elemanlarinin  karelerini ayni satirda aralarina bosluk bırakarak print ediniz
 
     public static void ciftKarePrint(List<Integer> sayi) {
         sayi.

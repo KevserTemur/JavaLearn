@@ -24,6 +24,7 @@ public class C06_distinct {
     }//main sonu
 
         // Task : List elemanlarini alafabetik buyuk harf ve  tekrarsiz print ediniz.
+        // Task : List elemanlarini alafabetik buyuk harf ve  tekrarsiz print ediniz.
 
     public static void alfBkTkszPrint(List<String> menu) {
 

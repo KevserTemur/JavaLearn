@@ -33,6 +33,7 @@ public class C04_reduce {
     }//main sonu
 
     // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz.
+    // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz.
     public static void ciftKareMaxPrint(List<Integer> sayi) {
         //Optional<Integer> maxEleman= sayi.//filter işleimi null değer return etme riskine karsı Optional Class type data casting yapıldı
         //           stream().//list elemanları akısa laındı
