@@ -1,9 +1,6 @@
 package J99_Lambda;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class C08_limit {
@@ -26,7 +23,20 @@ public class C08_limit {
         //dolaysıyle limit cıktısı doprudan sout ile print edilemez.limit çıktısı list veya array gibi bir coll. atanmalı
         System.out.println(Arrays.toString(enBykKarktr.toArray()));//java.util.stream.SliceOps$1@6e8dacdf
 
+        System.out.println("   ***   ");
 
+        Object[] enbykKrktrarr = menu.
+                stream().
+                sorted(Comparator.comparing(String::length).reversed()).
+                limit(1).//akısdaki ilk 1 eleman alındı
+                        toArray();//akısdaki elemanlar array'a atandı
+
+        System.out.println(Arrays.toString(enbykKrktrarr));
+
+        Optional<String> enBykKarktr2 = menu.
+                stream().
+                sorted(Comparator.comparing(String::length).reversed()).
+                findFirst();//akısdaki ilk 1 eleman alındı
 
 
     }
