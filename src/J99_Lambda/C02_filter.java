@@ -46,7 +46,7 @@ public class C02_filter {
 
     }
 
-    //Task : "Functional Programming":cincix code kullanarak list elemanlarının 35 den küçük  çiftlerini  aynı satirda aralarında bosluk olacak sekilde print ediniz.
+
     //Task : "Functional Programming":cincix code kullanarak list elemanlarının 35 den küçük  çiftlerini  aynı satirda aralarında bosluk olacak sekilde print ediniz.
     public static void printCiftElFunctional2(List<Integer> sayi) {//amele method
         sayi.

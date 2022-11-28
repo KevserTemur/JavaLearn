@@ -9,7 +9,7 @@ public class C05_sorted {
     public static void main(String[] args) {
         List<Integer> sayi = new ArrayList<>(Arrays.asList(24, 38, 49, 33, 7, 3, 42, 66, 75, 45, 46, 55, 35, 25, 67, 16));
         //  List<Integer> sayi = new ArrayList<>(Arrays.asList(1, 3, 5,4,6,12,8));//filter olarak cift  sartı null verecegi için optional class ataması yapar
-        //  List<Integer> sayi = new ArrayList<>(Arrays.asList(1, 3, 5,4,6,12,8));//filter olarak cift  sartı null verecegi için optional class ataması yapar
+
         ciftKareKbPrint(sayi);//256 576 1444 1764 2116 4356
         System.out.println("\n   ***   ");
         tekKareBkPrint(sayi);//5625 4489 3025 2401 2025 1225 1089 625 49 9

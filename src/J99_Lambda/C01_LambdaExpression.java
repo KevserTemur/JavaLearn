@@ -103,7 +103,7 @@ public class C01_LambdaExpression {
                 stream().//List elemanlarını yukarıdan aşağıya akısa alır.
                 forEach((System.out::print));//Method refernece->System.out yapısından print meth call edildi
         //MethodKkaynagı::Method ->meth reference
-        //MethodKkaynagı::Method ->meth reference
+
 
     }
 
