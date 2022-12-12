@@ -9,7 +9,7 @@ public class _06_create_boolean2 {
 
         //Kodu aşağıya yazınız.
 
-boolean calisiyorMu=false;
-        System.out.println(calisiyorMu);
+        boolean b = false;
+        System.out.println(b);
     }
 }
