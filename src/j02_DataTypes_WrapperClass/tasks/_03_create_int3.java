@@ -9,8 +9,8 @@ public class _03_create_int3 {
 
         //Kodu aşağıya yazınız.
 
-        int x=120;
-        System.out.println(x);
+        int a = 120;
+        System.out.println(a);
 
     }
 }
