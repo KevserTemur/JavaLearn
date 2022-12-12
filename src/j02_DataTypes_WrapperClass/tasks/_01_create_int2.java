@@ -10,12 +10,9 @@ public class _01_create_int2 {
 
         //Kodu aşağıya yazınız.
 
-        int a = 100;
-        System.out.println(a);
+        int sayi = 100;
+        System.out.println(sayi);
 
 
     }
-
 }
-
-
