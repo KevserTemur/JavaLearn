@@ -9,7 +9,7 @@ public class _07_create_double1 {
 
         //Kodu aşağıya yazınız.
 
-double oran=120d;
-        System.out.println(oran);
+        double a = 120;
+        System.out.println(a);
     }
 }
