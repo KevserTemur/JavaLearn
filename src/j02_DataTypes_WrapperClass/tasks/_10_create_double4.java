@@ -8,9 +8,9 @@ public class _10_create_double4 {
           Double'ı yazdırınız.  */
 
         //Kodu aşağıya yazınız.
-double oran=550.24d;
-        System.out.println(oran);
 
+        double a = 550.24;
+        System.out.println(a);
 
 
     }
