@@ -9,9 +9,9 @@ public class _13_create_float3 {
 
         //Kodu aşağıya yazınız.
 
+        float a = 3.55f;
+        System.out.println(a);
 
-float oran=3.55f;
-        System.out.println(oran);
 
     }
 }
