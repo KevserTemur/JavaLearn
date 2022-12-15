@@ -9,8 +9,9 @@ public class _14_create_short1 {
 
         //Kodu aşağıya yazınız.
 
-short sayı=12;
-        System.out.println(sayı);
+        short a = 12;
+        System.out.println(a);
+
 
     }
 }
